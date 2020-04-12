@@ -1,0 +1,10 @@
+name: PlayerTPS
+main: me.buryings.playertps.Main
+version: 1.0-SNAPSHOT
+author: Buryings
+description: Simple TPS plugin
+softdepend: [PlaceHolderAPI]
+commands:
+  ptps:
+    alises: [playertps, tps]
+    description: Sends the player's TPS count in a message!
