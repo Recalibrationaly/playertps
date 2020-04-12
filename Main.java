@@ -43,6 +43,7 @@ public class Main extends JavaPlugin implements CommandExecutor, Listener {
             Player player = (Player)sender;
             double tps = TPSCount.getTPS();
             double readableTPS = (double)Math.round(tps * 100.0) / 100.0;
+		if (player.hasPermission("playertps.viewtps"))
             player.sendMessage(ChatColor.translateAlternateColorCodes((char)'&', (String)this.message.replace("%tps%", String.valueOf(readableTPS))));
         }
         return true;
